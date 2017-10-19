@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link href="css/style.css" rel="stylesheet">
+      <script src="js/knockout-3.4.2.js"></script>
+       
+  </head>
+  <body>
+    <div class="container">
+      <div class="options-box">
+
+Search: <input data-bind="textInput: filter" />
+<table>
+  <tbody data-bind="foreach: filteredItems">
+    <tr><td data-bind="text: title"></td></tr>
+  </tbody>
+</table>
+
+    <div id="map">      
+</div>
+
+    <script async defer
+         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNcmbeAtdFP1VvOOs8BNAgBPO0LlEnbDI&callback=initMap">
+    </script>
+    <script src="js/main.js"></script>
+
+
+  </body>
+
+</html>
